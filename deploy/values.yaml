@@ -11,7 +11,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: kartcreds
 service:
   type: LoadBalancer
   port: 80
